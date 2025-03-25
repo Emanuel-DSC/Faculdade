@@ -10,11 +10,7 @@ int main() {
     float area1;
     float pib1;
     int pontosTuristicos1;
-    float densidadePopulacional1 = populacao1 / area1;
-    float pibPerCapita1 = pib1 * 1000000000 / populacao1;
-    float superPoder1 = (float)populacao1 + area1 + pib1 * 1000000000 + pontosTuristicos1 + pibPerCapita1 + (1 / densidadePopulacional1);
-
-
+    
     printf("Carta1:\n");
     printf("Digite o estado (A-H): ");
     scanf(" %c", &estado1);
@@ -26,7 +22,7 @@ int main() {
     scanf(" %[^\n]", nomeCidade1);
 
     printf("Digite a população da cidade: ");
-    scanf("%d", &populacao1);
+    scanf("%lu", &populacao1);
 
     printf("Digite a área da cidade (em km²): ");
     scanf("%f", &area1);
@@ -37,6 +33,10 @@ int main() {
     printf("Digite o número de pontos turísticos: ");
     scanf("%d", &pontosTuristicos1);
 
+    float densidadePopulacional1 = populacao1 / area1;
+    float pibPerCapita1 = pib1 * 1000000000 / populacao1;
+    float superPoder1 = (float)populacao1 + area1 + pib1 * 1000000000 + pontosTuristicos1 + pibPerCapita1 + (1 / densidadePopulacional1);
+
     // carta 2
     char estado2;
     char codigo2[4];
@@ -45,11 +45,7 @@ int main() {
     float area2;
     float pib2;
     int pontosTuristicos2;
-    float densidadePopulacional2 = populacao2 / area2;
-    float pibPerCapita2 = pib2 * 1000000000 / populacao2;
-    float superPoder2 = (float)populacao2 + area2 + pib2 * 1000000000 + pontosTuristicos2 + pibPerCapita2 + (1 / densidadePopulacional2);
-
-
+    
     printf("\nCarta2:\n");
     printf("Digite o estado (A-H): ");
     scanf(" %c", &estado2);
@@ -61,7 +57,7 @@ int main() {
     scanf(" %[^\n]", nomeCidade2); 
 
     printf("Digite a população da cidade: ");
-    scanf("%d", &populacao2);
+    scanf("%lu", &populacao2);
 
     printf("Digite a área da cidade (em km²): ");
     scanf("%f", &area2);
@@ -71,6 +67,10 @@ int main() {
 
     printf("Digite o número de pontos turísticos: ");
     scanf("%d", &pontosTuristicos2);
+
+    float densidadePopulacional2 = populacao2 / area2;
+    float pibPerCapita2 = pib2 * 1000000000 / populacao2;
+    float superPoder2 = (float)populacao2 + area2 + pib2 * 1000000000 + pontosTuristicos2 + pibPerCapita2 + (1 / densidadePopulacional2);
 
     //Resultado das cartas
 
